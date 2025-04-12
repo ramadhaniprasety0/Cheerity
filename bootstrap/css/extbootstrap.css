@@ -1,0 +1,27 @@
+.btn-register {
+    background-color: #ffff;
+    color: #F4BD22;
+    width: 168px;
+    height: 40px;
+}
+
+.btn-register:hover {
+    background-color: #F99C08;
+    color: #ffff;
+    width: 168px;
+    height: 40px;
+}
+
+.btn-login {
+    background-color: #F99C08;
+    color: #ffff;
+    width: 168px;
+    height: 40px;
+}
+
+.btn-login:hover {
+    background-color: #ffff;
+    color: #F4BD22;
+    width: 168px;
+    height: 40px;
+}
