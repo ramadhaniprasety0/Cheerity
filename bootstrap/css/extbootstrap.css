@@ -198,6 +198,85 @@ input[type="checkbox"]:checked {
             text-align: center;
             margin-top: 8px;
         }
-
+        
+        .campaign-card {
+            border: 1px solid #000;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            background-color: #fff;
+        }
+        
+        .campaign-card img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .card-progress-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .progress-circle {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 3px solid #f4bd22;
+        }
+        
+        .progress-label {
+            font-weight: bold;
+            font-size: 14px;
+            color: #000;
+        }
+        
+        .progress-status {
+            font-size: 13px;
+            color: #777;
+        }
+        
+        .card .progress {
+            height: 6px;
+            border-radius: 20px;
+            background-color: #e0e0e0;
+            margin-bottom: 10px;
+        }
+        
+        .card .progress-bar {
+            background-color: #f4bd22;
+            border-radius: 20px;
+        }
+        
+        .card-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #000;
+        }
+        
+        .card-text {
+            font-size: 0.95rem;
+            color: #444;
+        }
+        
+        .donate-btn {
+            width: 100%;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #f4bd22;
+            border: 1px solid #000;
+            font-weight: 600;
+            color: #000;
+            transition: all 0.3s ease;
+        }
+        
+        .donate-btn:hover {
+            background-color: #e0a800;
+            color: #fff;
+        }
+        
 
 
