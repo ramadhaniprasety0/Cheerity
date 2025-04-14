@@ -1,7 +1,7 @@
 # Cheerity
 
 ## Login
-![image](https://github.com/user-attachments/assets/e4fd82cc-41c6-4362-88fb-5467032e47b4)
+![image](https://github.com/user-attachments/assets/c3b03bbb-c577-4bde-a9ce-e772bd3cbda4)
 
 ## Register
 ![image](https://github.com/user-attachments/assets/647cc84a-0b8d-49c1-ae2a-1e588c8cd0e1)
