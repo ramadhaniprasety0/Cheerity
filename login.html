@@ -22,7 +22,7 @@
                 <a class="nav-link active fw-bold" aria-current="page" href="index.html">Beranda</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link fw-bold" href="campaign.html">Kampanye</a>
+                <a class="nav-link fw-bold" href="#">Kampanye</a>
               </li>
               <li class="nav-item me-3">
                 <a class="nav-link fw-bold" href="#">Volunteer</a>
@@ -36,18 +36,20 @@
               <li class="nav-item me-3">
                 <a class="nav-link fw-bold" href="#">Tentang Kami</a>
               </li>
-              <li class="nav-item me-3">
-                <a class="btn btn-outline-primary" href="#">Masuk</a>
-              </li>
-              <li class="nav-item">
-                <a class="btn btn-primary" href="#">Daftar</a>
-              </li>
+              <div class="d-flex flex-wrap ">
+                <li class="nav-item me-3">
+                  <a class="btn btn-outline-primary" href="#">Masuk</a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-primary" href="#">Daftar</a>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
     </nav>
-    <main>
-        <div class="container p-5 mt-5  mb-5 mt-md-3 mb-md-3 mt-sm-0 mb-sm-0 rounded-4" style="background-color: #F4BD22;">
+    <main class="vh-100 mb-5">
+        <div class="container p-5 mt-5 rounded-4" style="background-color: #F4BD22; background-image: url(assets/image/Logo_putihh.png); background-repeat: no-repeat; background-position: right center; background-size: 1000px;">
             <div class="row">
                 <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
                     <img src="assets/image/cheerity_img1.png" alt="Logo_cheerity" width="100%" height="100%" class="rounded-4">
@@ -84,16 +86,48 @@
                         </div>
                         <div class="d-flex justify-content-end align-items-center mt-5 gap-2">
                           <a href="register.html" class="btn btn-register">Daftar</a>
-                          <button type="submit" class="btn btn-login">Masuk</button>
+                          <!-- <button type="submit" class="btn btn-login">Masuk</button> -->
+                          <a href="index.html" class="btn btn-login">Masuk</a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>  
     </main>
-    <footer class="bg-light p-2 p-md-3 text-center ">
-        <div class="copyright">© Copyright <strong><img src="assets/image/Logo_cheerity.png" alt="Logo_cheerity" srcset="" width="16" height="16" class="me-1"><span style="color: #F4BD22;">Cheerity</span></strong>. All Rights Reserved</div>
-        <div class="credits">Designed by <a href="#" style="text-decoration: none; color: #F4BD22;">Cheerity Developer</a></div>
+    <footer>
+        <div class="container-fluid p-5 bg-cheerity-footer" style="background-color: #F4BD22;">
+            <div class="row">
+                <div class="col-4">
+                    <div class="d-flex flex-wrap align-items-center gap-1">
+                        <img src="assets/image/Logo_putih.png" alt="Logo_cheerity" class="img-fluid" width="64" height="64">
+                        <h3 class="fw-bold text-white">Cheerity</h3>
+                    </div>
+                    <p class="text-white text-justify">Menciptakan pengalaman amal yang tidak hanya berfokus pada bantuan sosial, tetapi juga menghadirkan kebahagiaan bagi semua yang terlibat. Dengan menggabungkan unsur charity dan fun, kegiatan ini akan mendorong lebih banyak orang untuk berbagi melalui aktivitas yang seru dan interaktif.</p>   
+                </div>
+                <div class="col-4">
+                    <h5 class="fw-bold text-white">Layanan Kami</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" class="text-white">Home</a></li>
+                        <li class="mb-3"><a href="#" class="text-white">About Us</a></li>
+                        <li class="mb-3"><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h5 class="fw-bold text-white">Kontak Kami</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" class="text-white">Home</a></li>
+                        <li class="mb-3"><a href="#" class="text-white">About Us</a></li>
+                        <li class="mb-3"><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row border-top d-flex align-content-center mt-2">
+                <div class="col-12 text-center p-2">
+                    <div>© Copyright <strong><img src="assets/image/Logo_cheerity.png" alt="Logo_cheerity" srcset="" width="24" height="24" class="me-1"><span class="text-white">Cheerity</span></strong>. All Rights Reserved</div>
+                    <div>Designed by <a href="#" style="text-decoration: none; color: #ffffff;">Cheerity Developer</a></div>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>

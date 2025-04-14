@@ -3,6 +3,7 @@
     color: #F4BD22;
     width: 168px;
     height: 40px;
+    border-radius: 30px;
 }
 
 .btn-register:hover {
@@ -25,3 +26,178 @@
     width: 168px;
     height: 40px;
 }
+
+.btn-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #F4BD22;
+    width: 265px;
+    height: 63px;
+    text-decoration: none;
+    border: 2px solid #F4BD22;
+    border-radius: 30px;
+    opacity: 2;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-hero:hover{
+    background-color: #F4BD22;
+    color: #ffff;
+}
+
+.bg-cheerity{
+    background-image: url("../../assets/image/Logo_putihh.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-cheerity2{
+    background-image: url("../../assets/image/cheerity_bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.btn-daftar{
+    background-color: #F4BD22;
+    color: #ffff;
+    width: 240px;
+}
+
+.btn-daftar:hover{
+    background-color: #ffff;
+    color: #F4BD22;
+    width: 240px;
+    border: 1px solid #F4BD22;
+}
+
+.card-testimoni{
+    background-color: #F4F4F4; 
+    border: none; 
+    display: flex; 
+    flex-direction: column; 
+    height: 100%;
+}
+
+.card-donasi{
+    background-color: #ffff; 
+    border: none; 
+    display: flex; 
+    flex-direction: column; 
+    height: 100%;
+}
+
+.bg-cheerity-footer{
+    background-image: url("../../assets/image/Logo_putihh.png");
+    background-size: 700px;
+    background-position: right center;
+    position: relative;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+
+input[type="checkbox"]:checked {
+    background-color: #F7CE59;
+    border-color: #F7CE59; 
+    border: 1px solid #F7CE59; 
+}
+
+/* details */
+
+.campaign-image {
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .gallery-thumb {
+            width: 100%;
+            height: 85px;
+            object-fit: cover;
+            border-radius: 10px;
+            background-color: #dee2e6;
+        }
+
+        .progress {
+            height: 10px;
+        }
+
+        .progress-bar {
+            background-color: #ffc107;
+        }
+
+        .btn-donate {
+            background-color: #ffc107;
+            border: none;
+        }
+
+        .btn-donate:hover {
+            background-color: #e0a800;
+        }
+
+        .donation-goal {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .donation-target {
+            color: #888;
+            font-size: 0.95rem;
+        }
+
+        .donation-time {
+            color: #b58900;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        .donation-organizer img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            background-color: #dee2e6;
+        }
+
+        .organizer-info {
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        .organizer-verified {
+            font-size: 0.85rem;
+            color: green;
+        }
+
+        .donation-participants img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 4px;
+            border: 2px solid #fff;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .donation-buttons .btn {
+            border-radius: 25px;
+            font-weight: 600;
+        }
+
+        .share-text {
+            font-size: 0.85rem;
+            color: #888;
+            text-align: center;
+            margin-top: 8px;
+        }
+
+
+
