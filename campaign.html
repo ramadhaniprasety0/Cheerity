@@ -9,104 +9,6 @@
     <link rel="stylesheet" href="bootstrap/css/extbootstrap.css" />
     <link rel="shortcut icon" href="assets/image/Logo_cheerity.png" type="image/x-icon" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-    <style>
-        /* Wrapper card */
-        form.d-flex input[type="search"]::placeholder {
-            color: #999;
-        }
-
-        form.d-flex button {
-            min-width: 50px;
-        }
-
-        .campaign-card {
-            border: 1px solid #000;
-            /* Border hitam */
-            border-radius: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            overflow: hidden;
-            background-color: #fff;
-        }
-
-        /* Gambar atas */
-        .campaign-card img {
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        /* Progress info */
-        .card-progress-info {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-
-        /* Lingkaran progress */
-        .progress-circle {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            border: 3px solid #f4bd22;
-        }
-
-        /* Label progress */
-        .progress-label {
-            font-weight: bold;
-            font-size: 14px;
-            color: #000;
-        }
-
-        .progress-status {
-            font-size: 13px;
-            color: #777;
-        }
-
-        /* Progress bar strip */
-        .card .progress {
-            height: 6px;
-            border-radius: 20px;
-            background-color: #e0e0e0;
-            margin-bottom: 10px;
-        }
-
-        .card .progress-bar {
-            background-color: #f4bd22;
-            border-radius: 20px;
-        }
-
-        /* Judul dan teks */
-        .card-title {
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: #000;
-        }
-
-        .card-text {
-            font-size: 0.95rem;
-            color: #444;
-        }
-
-        /* Tombol Donate */
-        .donate-btn {
-            width: 100%;
-            padding: 10px;
-            border-radius: 15px;
-            background-color: #f4bd22;
-            border: 1px solid #000;
-            /* Tambah border hitam */
-            font-weight: 600;
-            color: #000;
-            transition: all 0.3s ease;
-        }
-
-        .donate-btn:hover {
-            background-color: #e0a800;
-            color: #fff;
-        }
-    </style>
 </head>
 
 <body>
@@ -172,15 +74,21 @@
                 <div class="row g-4">
                     <div class="col-sm-6 col-md-4">
                         <div class="card campaign-card h-100">
-                            <img src="assets/image/cheerity_img4.png" class="card-img-top" alt="Kampanye Pendidikan" />
+                            <img src="assets/image/cheerity_img4.png" class="card-img-top" alt="Kampanye 1" />
                             <div class="card-body">
                                 <div class="d-flex flex-wrap align-items-center mb-3">
                                     <div class="d-flex align-items-center">
-                                        <span class="circle-progress me-2" style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
-                                        <span><strong>40% </strong>Completed</span>
+                                        <span class="circle-progress me-2"
+                                            style="width: 40px; height: 40px; background-color: #2E7D32; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;">
+                                            <span
+                                                style="display: flex; justify-content: center; align-items: center; background-color: #2E7D32; border-radius: 50%; width: 36px; height: 36px;">
+                                                <span
+                                                    style="color: white; font-size: 20px;">&#10003;</span></span></span>
+                                        <span><strong>100%</strong> Completed</span>
                                     </div>
                                     <div class="progress w-100 mt-2">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <h5 class="card-title mt-2">Beasiswa untuk Anak Pelosok</h5>
@@ -188,51 +96,65 @@
                                     lebih layak.</p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <button class="btn donate-btn w-100">Donasi</button>
+                                <button class="btn donate-btn w-100"
+                                    onclick="location.href='detail-campaign.html'">Donasi</button>
                             </div>
                         </div>
                     </div>
 
+                    <!-- CARD 2 -->
                     <div class="col-sm-6 col-md-4">
                         <div class="card campaign-card h-100">
-                            <img src="assets/image/kampanye1.png" class="card-img-top" alt="Kampanye Kesehatan" />
+                            <img src="assets/image/cheerity_img3.png" class="card-img-top" alt="Kampanye 2" />
                             <div class="card-body">
                                 <div class="d-flex flex-wrap align-items-center mb-3">
                                     <div class="d-flex align-items-center">
-                                        <span class="circle-progress me-2" style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
-                                        <span><strong>40% </strong>Completed</span>
+                                        <span class="circle-progress me-2"
+                                            style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span
+                                                style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span
+                                                    style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
+                                        <span><strong>60%</strong> Completed</span>
                                     </div>
                                     <div class="progress w-100 mt-2">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%"
+                                            aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
-                                <h5 class="card-title mt-2">Pulihkan Rumah Korban Longsor</h5>
-                                <p class="card-text">Longsor hancurkan rumah warga di desa Cibatu. Bantu mereka kembali punya tempat tinggal yang layak.</p>
+                                <h5 class="card-title mt-2">Akses Air Bersih untuk Desa</h5>
+                                <p class="card-text">Membangun infrastruktur air bersih di desa yang kekurangan air.</p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <button class="btn donate-btn w-100">Donasi</button>
+                                <button class="btn donate-btn w-100"
+                                    onclick="location.href='detail-campaign.html'">Donasi</button>
                             </div>
                         </div>
                     </div>
 
+                    <!-- CARD 3 -->
                     <div class="col-sm-6 col-md-4">
                         <div class="card campaign-card h-100">
-                            <img src="assets/image/kampanye2.png" class="card-img-top" alt="Kampanye Lingkungan" />
+                            <img src="assets/image/cheerity_img2.png" class="card-img-top" alt="Kampanye 3" />
                             <div class="card-body">
                                 <div class="d-flex flex-wrap align-items-center mb-3">
                                     <div class="d-flex align-items-center">
-                                        <span class="circle-progress me-2" style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
-                                        <span><strong>40% </strong>Completed</span>
+                                        <span class="circle-progress me-2"
+                                            style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span
+                                                style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span
+                                                    style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
+                                        <span><strong>80%</strong> Completed</span>
                                     </div>
                                     <div class="progress w-100 mt-2">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
-                                <h5 class="card-title mt-2">Pakan untuk Hewan Terlantar</h5>
-                                <p class="card-text">Shelter hewan kekurangan stok pakan dan obat. Yuk, bantu beri kehidupan yang lebih baik bagi mereka.</p>
+                                <h5 class="card-title mt-2">Pemberdayaan UMKM Lokal</h5>
+                                <p class="card-text">Dukung pelatihan dan permodalan bagi pelaku usaha mikro di desa.
+                                </p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <button class="btn donate-btn w-100">Donasi</button>
+                                <button class="btn donate-btn w-100"
+                                    onclick="location.href='detail-campaign.html'">Donasi</button>
                             </div>
                         </div>
                     </div>
@@ -243,18 +165,24 @@
                             <div class="card-body">
                                 <div class="d-flex flex-wrap align-items-center mb-3">
                                     <div class="d-flex align-items-center">
-                                        <span class="circle-progress me-2" style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
-                                        <span><strong>40% </strong>Completed</span>
+                                        <span class="circle-progress me-2"
+                                            style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span
+                                                style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span
+                                                    style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
+                                        <span><strong>50% </strong>Completed</span>
                                     </div>
                                     <div class="progress w-100 mt-2">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <h5 class="card-title mt-2">Air Bersih untuk Warga Sumba</h5>
-                                <p class="card-text">Warga di Sumba Timur harus jalan jauh demi air bersih. Donasimu bisa bantu bangun sumur bor di sana.</p>
+                                <p class="card-text">Warga di Sumba Timur harus jalan jauh demi air bersih. Donasimu
+                                    bisa bantu bangun sumur bor di sana.</p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <button class="btn donate-btn w-100">Donasi</button>
+                                <button class="btn donate-btn w-100"
+                                    onclick="location.href='detail-campaign.html'">Donasi</button>
                             </div>
                         </div>
                     </div>
@@ -265,18 +193,24 @@
                             <div class="card-body">
                                 <div class="d-flex flex-wrap align-items-center mb-3">
                                     <div class="d-flex align-items-center">
-                                        <span class="circle-progress me-2" style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
-                                        <span><strong>40% </strong>Completed</span>
+                                        <span class="circle-progress me-2"
+                                            style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span
+                                                style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span
+                                                    style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
+                                        <span><strong>67% </strong>Completed</span>
                                     </div>
                                     <div class="progress w-100 mt-2">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 67%"
+                                            aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <h5 class="card-title mt-2">Dapur Umum untuk Korban Bencana</h5>
-                                <p class="card-text">Banjir melanda pemukiman padat. Yuk, bantu sediakan makanan hangat dan air bersih untuk para korban</p>
+                                <p class="card-text">Banjir melanda pemukiman padat. Yuk, bantu sediakan makanan hangat
+                                    dan air bersih untuk para korban</p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <button class="btn donate-btn w-100">Donasi</button>
+                                <button class="btn donate-btn w-100"
+                                    onclick="location.href='detail-campaign.html'">Donasi</button>
                             </div>
                         </div>
                     </div>
@@ -287,18 +221,24 @@
                             <div class="card-body">
                                 <div class="d-flex flex-wrap align-items-center mb-3">
                                     <div class="d-flex align-items-center">
-                                        <span class="circle-progress me-2" style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
+                                        <span class="circle-progress me-2"
+                                            style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span
+                                                style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span
+                                                    style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
                                         <span><strong>40% </strong>Completed</span>
                                     </div>
                                     <div class="progress w-100 mt-2">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <h5 class="card-title mt-2">Renovasi Sekolah Rusak di NTT</h5>
-                                <p class="card-text">Sekolah roboh, siswa belajar tanpa atap. Bantu kami perbaiki bangunan agar anak-anak bisa belajar dengan aman.</p>
+                                <p class="card-text">Sekolah roboh, siswa belajar tanpa atap. Bantu kami perbaiki
+                                    bangunan agar anak-anak bisa belajar dengan aman.</p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <button class="btn donate-btn w-100">Donasi</button>
+                                <button class="btn donate-btn w-100"
+                                    onclick="location.href='detail-campaign.html'">Donasi</button>
                             </div>
                         </div>
                     </div>
@@ -309,18 +249,24 @@
                             <div class="card-body">
                                 <div class="d-flex flex-wrap align-items-center mb-3">
                                     <div class="d-flex align-items-center">
-                                        <span class="circle-progress me-2" style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
+                                        <span class="circle-progress me-2"
+                                            style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span
+                                                style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span
+                                                    style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
                                         <span><strong>40% </strong>Completed</span>
                                     </div>
                                     <div class="progress w-100 mt-2">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <h5 class="card-title mt-2">Bantu Bangun Mushola di Desa Terpencil</h5>
-                                <p class="card-text">Warga harus shalat berjamaah di rumah karena mushola rusak. Yuk, bantu bangun rumah ibadah mereka kembali.</p>
+                                <p class="card-text">Warga harus shalat berjamaah di rumah karena mushola rusak. Yuk,
+                                    bantu bangun rumah ibadah mereka kembali.</p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <button class="btn donate-btn w-100">Donasi</button>
+                                <button class="btn donate-btn w-100"
+                                    onclick="location.href='detail-campaign.html'">Donasi</button>
                             </div>
                         </div>
                     </div>
@@ -331,18 +277,24 @@
                             <div class="card-body">
                                 <div class="d-flex flex-wrap align-items-center mb-3">
                                     <div class="d-flex align-items-center">
-                                        <span class="circle-progress me-2" style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
+                                        <span class="circle-progress me-2"
+                                            style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span
+                                                style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span
+                                                    style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
                                         <span><strong>40% </strong>Completed</span>
                                     </div>
                                     <div class="progress w-100 mt-2">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <h5 class="card-title mt-2">Popok dan Susu untuk Bayi Pengungsi</h5>
-                                <p class="card-text">Bayi-bayi di pengungsian kekurangan popok dan susu formula. Donasi Anda bantu jaga kenyamanan dan kesehatannya.</p>
+                                <p class="card-text">Bayi-bayi di pengungsian kekurangan popok dan susu formula. Donasi
+                                    Anda bantu jaga kenyamanan dan kesehatannya.</p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <button class="btn donate-btn w-100">Donasi</button>
+                                <button class="btn donate-btn w-100"
+                                    onclick="location.href='detail-campaign.html'">Donasi</button>
                             </div>
                         </div>
                     </div>
@@ -353,18 +305,24 @@
                             <div class="card-body">
                                 <div class="d-flex flex-wrap align-items-center mb-3">
                                     <div class="d-flex align-items-center">
-                                        <span class="circle-progress me-2" style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
+                                        <span class="circle-progress me-2"
+                                            style="width: 40px; height: 40px; background-color: #F4BD22; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;"><Span
+                                                style="display: flex; justify-content: center; align-items: center; background-color: #ffff; border-radius: 50%; width: 36px; height: 36px;"><span
+                                                    style="background-color: #F4BD22; border-radius: 50%; width: 9px; height: 9px;"></span></Span></span>
                                         <span><strong>40% </strong>Completed</span>
                                     </div>
                                     <div class="progress w-100 mt-2">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%"
+                                            aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                                 <h5 class="card-title mt-2">Wakaf Buku untuk Taman Baca Desa</h5>
-                                <p class="card-text">Minimnya buku membuat anak desa kesulitan belajar. Donasi Anda bantu isi rak buku taman baca mereka.</p>
+                                <p class="card-text">Minimnya buku membuat anak desa kesulitan belajar. Donasi Anda
+                                    bantu isi rak buku taman baca mereka.</p>
                             </div>
                             <div class="card-footer bg-transparent border-0">
-                                <button class="btn donate-btn w-100">Donasi</button>
+                                <button class="btn donate-btn w-100"
+                                    onclick="location.href='detail-campaign.html'">Donasi</button>
                             </div>
                         </div>
                     </div>
@@ -379,10 +337,14 @@
             <div class="row">
                 <div class="col-4">
                     <div class="d-flex flex-wrap align-items-center gap-1">
-                        <img src="assets/image/Logo_putih.png" alt="Logo_cheerity" class="img-fluid" width="64" height="64">
+                        <img src="assets/image/Logo_putih.png" alt="Logo_cheerity" class="img-fluid" width="64"
+                            height="64">
                         <h3 class="fw-bold text-white">Cheerity</h3>
                     </div>
-                    <p class="text-white text-justify">Menciptakan pengalaman amal yang tidak hanya berfokus pada bantuan sosial, tetapi juga menghadirkan kebahagiaan bagi semua yang terlibat. Dengan menggabungkan unsur charity dan fun, kegiatan ini akan mendorong lebih banyak orang untuk berbagi melalui aktivitas yang seru dan interaktif.</p>   
+                    <p class="text-white text-justify">Menciptakan pengalaman amal yang tidak hanya berfokus pada
+                        bantuan sosial, tetapi juga menghadirkan kebahagiaan bagi semua yang terlibat. Dengan
+                        menggabungkan unsur charity dan fun, kegiatan ini akan mendorong lebih banyak orang untuk
+                        berbagi melalui aktivitas yang seru dan interaktif.</p>
                 </div>
                 <div class="col-4">
                     <h5 class="fw-bold text-white">Layanan Kami</h5>
@@ -403,29 +365,32 @@
             </div>
             <div class="row border-top d-flex align-content-center mt-2">
                 <div class="col-12 text-center p-2">
-                    <div>© Copyright <strong><img src="assets/image/Logo_cheerity.png" alt="Logo_cheerity" srcset="" width="24" height="24" class="me-1"><span class="text-white">Cheerity</span></strong>. All Rights Reserved</div>
-                    <div>Designed by <a href="#" style="text-decoration: none; color: #ffffff;">Cheerity Developer</a></div>
+                    <div>© Copyright <strong><img src="assets/image/Logo_cheerity.png" alt="Logo_cheerity" srcset=""
+                                width="24" height="24" class="me-1"><span class="text-white">Cheerity</span></strong>.
+                        All Rights Reserved</div>
+                    <div>Designed by <a href="#" style="text-decoration: none; color: #ffffff;">Cheerity Developer</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script>
-    document.getElementById("searchInput").addEventListener("input", function () {
-        const keyword = this.value.toLowerCase();
-        const cards = document.querySelectorAll(".campaign-card");
+        document.getElementById("searchInput").addEventListener("input", function () {
+            const keyword = this.value.toLowerCase();
+            const cards = document.querySelectorAll(".campaign-card");
 
-        cards.forEach(card => {
-            const title = card.querySelector(".card-title").textContent.toLowerCase();
-            const description = card.querySelector(".card-text").textContent.toLowerCase();
-            if (title.includes(keyword) || description.includes(keyword)) {
-                card.parentElement.style.display = "block";
-            } else {
-                card.parentElement.style.display = "none";
-            }
+            cards.forEach(card => {
+                const title = card.querySelector(".card-title").textContent.toLowerCase();
+                const description = card.querySelector(".card-text").textContent.toLowerCase();
+                if (title.includes(keyword) || description.includes(keyword)) {
+                    card.parentElement.style.display = "block";
+                } else {
+                    card.parentElement.style.display = "none";
+                }
+            });
         });
-    });
-</script>
+    </script>
 
 
 </body>
