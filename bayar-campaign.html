@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheerity-Pembayaran Kampanye</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/extbootstrap.css" />
+    <link rel="shortcut icon" href="assets/image/Logo_cheerity.png" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-3" href="#" style="color: #F4BD22;"><img
+                    src="assets/image/Logo_cheerity.png" alt="Logo_cheerity" class="me-2">Cheerity</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-3">
+                        <a class="nav-link fw-bold" aria-current="page" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active fw-bold" href="campaign.html">Kampanye</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fw-bold" href="#">Volunteer</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fw-bold" href="planning.html">Donasi</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fw-bold" href="#">Leaderboard</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fw-bold" href="#">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="btn btn-outline-primary" href="#">Masuk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="#">Daftar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+                <li class="breadcrumb-item"><a href="#">Kampanye</a></li>
+                <li class="breadcrumb-item"><a href="#">Detail</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Bayar</li>
+            </ol>
+        </div>
+
+        <div class="row">
+            <!-- Donasi Form -->
+            <div class="col-md-7">
+                <h4 class="fw-bold mb-4">Donasi</h4>
+
+                <div class="donation-amount mb-3">
+                    <div class="btn-group" role="group" id="nominal-buttons">
+                        <button type="button" class="btn btn-outline-secondary nominal-btn">5.000</button>
+                        <button type="button" class="btn btn-outline-secondary nominal-btn">10.000</button>
+                        <button type="button" class="btn btn-outline-secondary nominal-btn">20.000</button>
+                        <button type="button" class="btn btn-outline-secondary nominal-btn">50.000</button>
+                        <button type="button" class="btn btn-outline-secondary nominal-btn">100.000</button>
+                    </div>
+                </div>
+
+                <input type="number" class="form-control mb-3" placeholder="Masukkan Jumlah Donasi">
+                <input type="text" class="form-control mb-3" placeholder="Pesan (Opsional)">
+                <div class="form-check">
+                    <input class="form-check-input anon-checkbox" type="checkbox" id="realName">
+                    <label class="form-check-label" for="realName">
+                        Gunakan nama
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input anon-checkbox" type="checkbox" id="anonymous">
+                    <label class="form-check-label" for="anonymous">
+                        Donasi sebagai Hamba Allah
+                    </label>
+                </div>
+
+                <h6 class="mt-4">Payment</h6>
+
+                <div id="payment-options">
+                    <div class="payment-method border p-3 rounded mb-2 d-flex align-items-center">
+                        <img src="https://img.icons8.com/color/48/000000/visa.png" alt="visa">
+                        Visa ****1111
+                    </div>
+                    <div class="payment-method border p-3 rounded mb-2 d-flex align-items-center">
+                        <img src="https://img.icons8.com/ios-filled/50/apple-pay.png" alt="apple pay">
+                        e-money xxxxx
+                    </div>
+                    <div class="payment-method border p-3 rounded mb-2 d-flex align-items-center">
+                        <img src="https://img.icons8.com/color/48/000000/google-pay-india.png" alt="google pay">
+                        e-money xxxxx
+                    </div>
+                    <div class="payment-method border p-3 rounded mb-2">
+                        <button class="btn btn-link text-decoration-none">+ Tambah metode pembayaran</button>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between mt-4">
+                    <button class="btn btn-outline-secondary">Kembali</button>
+                    <button class="btn btn-warning text-white">Donasi</button>
+                </div>
+            </div>
+
+            <!-- Kampanye Card -->
+            <div class="col-md-5">
+                <div class="card p-3 campaign-card">
+                    <h6 class="text-muted">Kampanye</h6>
+                    <img src="assets/image/kampanye.png" alt="Kampanye Anak Pelosok">
+                    <h5 class="mt-3 fw-bold">Beasiswa untuk Anak Pelosok</h5>
+                    <p style="font-size: 0.9rem;">Di berbagai wilayah pelosok Indonesia, ribuan anak menghadapi
+                        tantangan besar dalam mengakses pendidikan yang layak. Program ini bertujuan untuk memberikan
+                        beasiswa, bantuan perlengkapan sekolah, dan fasilitas belajar untuk anak-anak yang membutuhkan.
+                    </p>
+                    <div class="mb-2 text-muted">Diselenggarakan oleh:</div>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/image/Logo_cheerity.png"
+                            style="width: 60px; height: auto; border-radius: 20px;" alt="Organizer" class="me-2" />
+                        <div>
+                            <p class="organizer-info mb-0">Cheerity</p>
+                            <p class="organizer-verified mb-0">Terverifikasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid p-5 bg-cheerity-footer" style="background-color: #F4BD22;">
+            <div class="row">
+                <div class="col-4">
+                    <div class="d-flex flex-wrap align-items-center gap-1">
+                        <img src="assets/image/Logo_putih.png" alt="Logo_cheerity" class="img-fluid" width="64"
+                            height="64">
+                        <h3 class="fw-bold text-white">Cheerity</h3>
+                    </div>
+                    <p class="text-white text-justify">Menciptakan pengalaman amal yang tidak hanya berfokus pada
+                        bantuan sosial, tetapi juga menghadirkan kebahagiaan bagi semua yang terlibat. Dengan
+                        menggabungkan unsur charity dan fun, kegiatan ini akan mendorong lebih banyak orang untuk
+                        berbagi melalui aktivitas yang seru dan interaktif.</p>
+                </div>
+                <div class="col-4">
+                    <h5 class="fw-bold text-white">Layanan Kami</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" class="text-white">Home</a></li>
+                        <li class="mb-3"><a href="#" class="text-white">About Us</a></li>
+                        <li class="mb-3"><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h5 class="fw-bold text-white">Kontak Kami</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#" class="text-white">Home</a></li>
+                        <li class="mb-3"><a href="#" class="text-white">About Us</a></li>
+                        <li class="mb-3"><a href="#" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row border-top d-flex align-content-center mt-2">
+                <div class="col-12 text-center p-2">
+                    <div>© Copyright <strong><img src="assets/image/Logo_cheerity.png" alt="Logo_cheerity" srcset=""
+                                width="24" height="24" class="me-1"><span class="text-white">Cheerity</span></strong>.
+                        All Rights Reserved</div>
+                    <div>Designed by <a href="#" style="text-decoration: none; color: #ffffff;">Cheerity Developer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/extbootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
